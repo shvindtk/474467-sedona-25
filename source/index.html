@@ -1,158 +1,207 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link rel="icon" sizes="32x32" href="img/favicon.png">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <header class="page-header">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" sizes="32x32" href="img/favicon.png">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div name="container">
       <nav class="navigation">
-            <a class="logo-link" href="#">
-              <img src="img/mainlogo.svg" alt="Город Седона." height="96" width="185">
-            </a>
-            <a class="mobile-menu-button" href="#">
-            </a>
-          </nav>
-    </header>
-    <main class="main">
-      <section class="welcome-img">
-                <div class="sedona-img">
-                        <h1 class="visually-hidden" hidden>Туристический городок Седона.</h1>
-                        <img src="img/welcome.svg" alt="Седона" height="214" width="282">
-                </div>
-              <div class="sedona-description">
-                    <h2> Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
-                    <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <a class="navigation_link" href="#">
+          <img src="img/mainlogo.svg" alt="Город Седона." height="96" width="185">
+        </a>
+        <button class="mobile_menu_button" href="#">
+          <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 0H0V4H24V0Z" fill="#81B3D2" />
+            <path d="M24 8H0V12H24V8Z" fill="#81B3D2" />
+            <path d="M24 16H0V20H24V16Z" fill="#81B3D2" />
+          </svg>
+        </button>
+        <div class="menu_wrapper">
+          <ul class="menu_list">
+            <li class="menu_item">
+              <a href="#">
+                Главная
+              </a>
+            </li>
+            <li class="menu_item">
+              <a href="#">
+                Фото и видео
+              </a>
+            </li>
+            <li class="menu_item">
+              <a href="#">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="menu_item">
+              <a href="#">
+                html academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main_logo">
+      <div class="main_logo_container">
+        <h1 class="visually-hidden" hidden>Туристический городок Седона.</h1>
+        <img src="img/welcome.svg" alt="Седона" height="214" width="282">
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <div class="product_description">
+          <h2> Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
+          <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+        <ul class="product_list list-reset">
+          <li class="product_item product_item_full">
+            <div class="product_item_wrapper">
+              <div class="product_canvas canvas_blue">
+                <h2 class="product_title">Настоящий городок</h2>
+                <p class="product_text">— №1 —</p>
+                <p class="product_text">Седона — не атракцион для туристов, там течёт своя жизнь</p>
               </div>
-      </section>
-      <section class="reason">
-        <ul class="reason-list list-reset">
-          <li class="reason-item reason-item-full">
-          <div class="reason-item-wrapper">
-            <div class="reason-canvas canvas-blue">
-              <h2 class="reason-title">Настоящий городок</h2>
-              <p  class="reason-text">— №1 —</p>
-              <p  class="reason-text">Седона — не атракцион для туристов, там течёт своя жизнь</p>
+              <div class="product_logo">
+                <img src="img/cityphoto.jpg" alt="Настоящий городок" height="260" width="520">
+              </div>
             </div>
-            <div class="reason-img">
-              <img src="img/cityphoto.jpg" alt="Настоящий городок" height="260" width="520">
-            </div>
-          </div>
-          <ul class="reason-list-more  list-reset">
-              <li class="reason-item">
-                <div class="reason-canvas reason-canvas-home">
-                  <h2 class="reason-title">Жильё</h2>
-                  <p  class="reason-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <ul class="product_list_more  list-reset">
+              <li class="product_item">
+                <div class="product_canvas product_canvas_home">
+                  <h2 class="product_title">Жильё</h2>
+                  <p class="product_text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </div>
               </li>
-              <li class="reason-item">
-                <div class="reason-canvas reason-canvas-food">
-                  <h2 class="reason-title">Еда</h2>
-                  <p  class="reason-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <li class="product_item">
+                <div class="product_canvas product_canvas_food">
+                  <h2 class="product_title">Еда</h2>
+                  <p class="product_text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                 </div>
               </li>
-              <li class="reason-item">
-                <div class="reason-canvas reason-canvas-souvenirs">
-                  <h2 class="reason-title">Сувениры</h2>
-                  <p  class="reason-text">Не только китайского,но и местного производства!</p>
+              <li class="product_item">
+                <div class="product_canvas product_canvas_souvenirs">
+                  <h2 class="product_title">Сувениры</h2>
+                  <p class="product_text">Не только китайского,но и местного производства!</p>
                 </div>
               </li>
             </ul>
           </li>
-          <li class="reason-item reason-item-full">
-           <div class="reason-item-wrapper">
-            <div class="reason-img">
-              <img src="img/bridge.jpg" alt="Мост дьявола" height="260" width="520">
-            </div>
-              <div class="reason-canvas canvas-blue">
-                <h2 class="reason-title">Там есть<br> мост дьявола</h2>
-                <p  class="reason-text">— №2 —</p>
-                <p  class="reason-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <li class="product_item product_item_full">
+            <div class="product_item_wrapper">
+              <div class="product_logo">
+                <img src="img/bridge.jpg" alt="Мост дьявола" height="260" width="520">
+              </div>
+              <div class="product_canvas canvas_blue">
+                <h2 class="product_title">Там есть<br> мост дьявола</h2>
+                <p class="product_text">— №2 —</p>
+                <p class="product_text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </div>
           </li>
-          <li class="reason-item">
-              <div class="reason-canvas">
-                <h2 class="reason-title">Небольшая<br> площадь</h2>
-                <p  class="reason-text">— №3 —</p>
-                <p  class="reason-text">Все интересные места находятся очень близко</p>
-              </div>
-          </li>
-          <li class="reason-item">
-            <div class="reason-canvas canvas-light">
-              <h2 class="reason-title">Красивая<br> дорога</h2>
-              <p  class="reason-text">— №4 —</p>
-              <p  class="reason-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <li class="product_item">
+            <div class="product_canvas">
+              <h2 class="product_title">Небольшая<br> площадь</h2>
+              <p class="product_text">— №3 —</p>
+              <p class="product_text">Все интересные места находятся очень близко</p>
             </div>
-        </li>
-        <li class="reason-item">
-          <div class="reason-canvas">
-            <h2 class="reason-title">Мало<br> туристов</h2>
-            <p  class="reason-text">— №5 —</p>
-            <p  class="reason-text">Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
-      </li>
-    </ul>
+          </li>
+          <li class="product_item">
+            <div class="product_canvas">
+              <h2 class="product_title">Красивая<br> дорога</h2>
+              <p class="product_text">— №4 —</p>
+              <p class="product_text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+          <li class="product_item">
+            <div class="product_canvas">
+              <h2 class="product_title">Мало<br> туристов</h2>
+              <p class="product_text">— №5 —</p>
+              <p class="product_text">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
-          <section class="search">
-                <h2 class="search-title">Заинтересовались?</h2>
-                <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <a class="button search-button" href="#">Найти гостиницу</a>
-          </section>
-
-    </main>
-    <footer class="footer">
-        <section class="map-canvas">
-        </section>
-        <section class="contacts">
-          <a class="hashtag">
-              #visitsedona
-          </a>
-          <ul class="social-list list-reset">
-            <li class="social-item">
-              <a class="social-link social-link-vk" href="https://twitter.com/htmlacademy_ru" target="_blank">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="48" height="48" fill="#81B3D2"/>
-                      <g clip-path="url(#clip0_29549_1771)">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M35.45 17.948C35.616 17.402 35.45 17 34.655 17H32.03C31.362 17 31.054 17.347 30.887 17.73C30.887 17.73 29.552 20.926 27.661 23.002C27.049 23.604 26.771 23.795 26.437 23.795C26.27 23.795 26.019 23.604 26.019 23.057V17.948C26.019 17.292 25.835 17 25.279 17H21.151C20.734 17 20.483 17.304 20.483 17.593C20.483 18.214 21.429 18.358 21.526 20.106V23.904C21.526 24.737 21.373 24.888 21.039 24.888C20.149 24.888 17.984 21.677 16.699 18.003C16.45 17.288 16.198 17 15.527 17H12.9C12.15 17 12 17.347 12 17.73C12 18.412 12.89 21.8 16.145 26.281C18.315 29.341 21.37 31 24.153 31C25.822 31 26.028 30.632 26.028 29.997V27.684C26.028 26.947 26.186 26.8 26.715 26.8C27.105 26.8 27.772 26.992 29.33 28.467C31.11 30.216 31.403 31 32.405 31H35.03C35.78 31 36.156 30.632 35.94 29.904C35.702 29.18 34.852 28.129 33.725 26.882C33.113 26.172 32.195 25.407 31.916 25.024C31.527 24.533 31.638 24.314 31.916 23.877C31.916 23.877 35.116 19.451 35.449 17.948H35.45Z" fill="white"/>
-                      </g>
-                      <defs>
-                      <clipPath id="clip0_29549_1771">
-                      <rect width="24" height="24" fill="white" transform="translate(12 12)"/>
-                      </clipPath>
-                      </defs>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-             <a class="social-link social-link-telegram" href="https://www.facebook.com/htmlacademy" target="_blank">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="48" height="48" fill="#81B3D2"/>
-                    <path d="M34.4392 16.6223L31.2705 31.566C31.0312 32.6205 30.408 32.883 29.5222 32.3865L24.6937 28.8285L22.3642 31.0695C22.1062 31.3275 21.891 31.5428 21.3937 31.5428L21.741 26.6258L30.6892 18.54C31.0785 18.1935 30.6045 18.0008 30.0847 18.348L19.0222 25.314L14.2597 23.823C13.224 23.4998 13.2052 22.7873 14.4757 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4392 16.623V16.6223Z" fill="white"/>
-                </svg>
+    <section class="search">
+      <div class="container">
+        <h2 class="search_title">Заинтересовались?</h2>
+        <p class="search_text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+          Седоне
+        </p>
+        <a class="button search_button" href="#">Найти гостиницу</a>
+      </div>
+    </section>
+    <section class="map_canvas">
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <section class="contacts">
+        <a class="hashtag">
+          #visitsedona
+        </a>
+        <ul class="social_list list_reset">
+          <li class="social_item">
+            <a class="social_link social-link-vk" href="https://twitter.com/htmlacademy_ru" target="_blank">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" fill="#81B3D2" />
+                <g clip-path="url(#clip0_29549_1771)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M35.45 17.948C35.616 17.402 35.45 17 34.655 17H32.03C31.362 17 31.054 17.347 30.887 17.73C30.887 17.73 29.552 20.926 27.661 23.002C27.049 23.604 26.771 23.795 26.437 23.795C26.27 23.795 26.019 23.604 26.019 23.057V17.948C26.019 17.292 25.835 17 25.279 17H21.151C20.734 17 20.483 17.304 20.483 17.593C20.483 18.214 21.429 18.358 21.526 20.106V23.904C21.526 24.737 21.373 24.888 21.039 24.888C20.149 24.888 17.984 21.677 16.699 18.003C16.45 17.288 16.198 17 15.527 17H12.9C12.15 17 12 17.347 12 17.73C12 18.412 12.89 21.8 16.145 26.281C18.315 29.341 21.37 31 24.153 31C25.822 31 26.028 30.632 26.028 29.997V27.684C26.028 26.947 26.186 26.8 26.715 26.8C27.105 26.8 27.772 26.992 29.33 28.467C31.11 30.216 31.403 31 32.405 31H35.03C35.78 31 36.156 30.632 35.94 29.904C35.702 29.18 34.852 28.129 33.725 26.882C33.113 26.172 32.195 25.407 31.916 25.024C31.527 24.533 31.638 24.314 31.916 23.877C31.916 23.877 35.116 19.451 35.449 17.948H35.45Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_29549_1771">
+                    <rect width="24" height="24" fill="white" transform="translate(12 12)" />
+                  </clipPath>
+                </defs>
+              </svg>
             </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" fill="#81B3D2"/>
-                  <path d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z" fill="white"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
-            <section class="copyright-cover">
-              <p class="copyright-text">Разработано</p>
-              <a>
-                <svg width="29" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18.1506 2.25H18.0502L4.5 3.58944V27.221L18.0502 34.875L31.5 27.221V3.58944L18.1506 2.25ZM29.5929 13.8266L18.0502 7.32075V7.22507H17.9498L17.8494 7.1294V7.22507L6.40706 13.8266V5.21591L17.9498 4.06782L29.5929 5.21591V13.8266ZM17.9498 8.75587L29.4926 15.1661L24.9758 17.6536L17.8494 13.6353V14.9747L23.7714 18.3233L22.868 18.8017L17.8494 15.9315V17.2709L21.6636 19.4714L20.8606 19.9498L17.8494 18.2276V19.5671L19.7565 20.6195L17.9498 21.6719L6.50743 15.2617L17.9498 8.75587ZM6.40706 16.6968L17.8494 23.2027V24.1595L9.92007 19.6628V21.0022L17.9498 25.5946V26.647L9.92007 22.1503V23.4897L17.9498 28.0821L26.0799 23.3941V18.419L29.4926 16.5055V26.0729L17.9498 32.6745L6.40706 26.1686V16.6968Z" fill="black"/>
-                </svg>
-              </a>
-            </section>
+          </li>
+          <li class="social_item">
+            <a class="social_link social-link-telegram" href="https://www.facebook.com/htmlacademy" target="_blank">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" fill="#81B3D2" />
+                <path
+                  d="M34.4392 16.6223L31.2705 31.566C31.0312 32.6205 30.408 32.883 29.5222 32.3865L24.6937 28.8285L22.3642 31.0695C22.1062 31.3275 21.891 31.5428 21.3937 31.5428L21.741 26.6258L30.6892 18.54C31.0785 18.1935 30.6045 18.0008 30.0847 18.348L19.0222 25.314L14.2597 23.823C13.224 23.4998 13.2052 22.7873 14.4757 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4392 16.623V16.6223Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </li>
+          <li class="social_item">
+            <a class="social_link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru"
+              target="_blank">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" fill="#81B3D2" />
+                <path
+                  d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <p class="copyright_text">Разработано</p>
+        <a class="copyright_logo">
+          <svg width="29" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M18.1506 2.25H18.0502L4.5 3.58944V27.221L18.0502 34.875L31.5 27.221V3.58944L18.1506 2.25ZM29.5929 13.8266L18.0502 7.32075V7.22507H17.9498L17.8494 7.1294V7.22507L6.40706 13.8266V5.21591L17.9498 4.06782L29.5929 5.21591V13.8266ZM17.9498 8.75587L29.4926 15.1661L24.9758 17.6536L17.8494 13.6353V14.9747L23.7714 18.3233L22.868 18.8017L17.8494 15.9315V17.2709L21.6636 19.4714L20.8606 19.9498L17.8494 18.2276V19.5671L19.7565 20.6195L17.9498 21.6719L6.50743 15.2617L17.9498 8.75587ZM6.40706 16.6968L17.8494 23.2027V24.1595L9.92007 19.6628V21.0022L17.9498 25.5946V26.647L9.92007 22.1503V23.4897L17.9498 28.0821L26.0799 23.3941V18.419L29.4926 16.5055V26.0729L17.9498 32.6745L6.40706 26.1686V16.6968Z"
+              fill="black" />
+          </svg>
+        </a>
+      </section>
+    </div>
+  </footer>
+</body>
 
-    </footer>
-  </body>
 </html>
