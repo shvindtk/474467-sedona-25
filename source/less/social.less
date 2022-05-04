@@ -1,3 +1,18 @@
+.social div {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding-left: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    padding-left: 104px;
+  }
+}
+
 .social__hashtag a {
   text-decoration: none;
   font-family: 'PT Sans';
@@ -5,4 +20,25 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+
+.social__hashtag {
+
+  @media (min-width: @tablet-width) {
+    margin-right: 97px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 256px;
+  }
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.social__link {
+  margin-left: 6px;
 }

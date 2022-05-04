@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+.navigation__button {
+  width: 23px;
+  height: 22px;
+  background-color: @white;
+  border: none;
+  outline: none;
+}
+
+.navigation__button svg {
+  fill: @blue;
+}
