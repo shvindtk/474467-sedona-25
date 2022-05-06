@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 
-<head>
+<head class="page__head">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" sizes="32x32" href="img/favicon.png">
@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header class="page-header">
+<body class="page__body">
+  <header class="page__header">
     <div name="container">
       <nav class="navigation">
         <a class="navigation__logo" href="#">
@@ -18,9 +18,9 @@
         </a>
         <button class="navigation__button sandwich-button" href="#" type="button">
           <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 0H0V4H24V0Z" fill="#81B3D2" />
-            <path d="M24 8H0V12H24V8Z" fill="#81B3D2" />
-            <path d="M24 16H0V20H24V16Z" fill="#81B3D2" />
+            <path d="M24 0H0V4H24V0Z" />
+            <path d="M24 8H0V12H24V8Z" />
+            <path d="M24 16H0V20H24V16Z" />
           </svg>
         </button>
         <div class="menu">
@@ -76,21 +76,23 @@
               <div class="product__logo product__logo-city">
               </div>
             </div>
+          </li>
+          <li class="product__item">
             <ul class="product__list-more  list-reset">
               <li class="product__item">
-                <div class="product__canvas .product__canvas-icon product__canvas-home">
+                <div class="product__canvas product__canvas-icon product__canvas-home">
                   <h2 class="product__title">Жильё</h2>
                   <p class="product__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </div>
               </li>
               <li class="product__item">
-                <div class="product__canvas .product__canvas-icon product__canvas-food">
+                <div class="product__canvas product__canvas-icon product__canvas-food">
                   <h2 class="product__title">Еда</h2>
                   <p class="product__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                 </div>
               </li>
               <li class="product__item">
-                <div class="product__canvas .product__canvas-icon product__canvas-souvenirs">
+                <div class="product__canvas product__canvas-icon product__canvas-souvenirs">
                   <h2 class="product__title">Сувениры</h2>
                   <p class="product__text">Не только китайского,но и местного производства!</p>
                 </div>
@@ -144,7 +146,7 @@
     <section class="map">
     </section>
   </main>
-  <footer class="footer">
+  <footer class="page__footer">
     <div class="container">
       <section class="social">
         <a class="social__hashtag">
@@ -179,7 +181,6 @@
             </a>
           </li>
           <li class="social__item">
-
             <a class="social__link social__link-youtube" href="https://www.youtube.com/user/htmlacademyru"
               target="_blank">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,16 +194,14 @@
         </ul>
       </section>
       <section class="copyright">
-        <div class="container">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__logo">
-            <svg width="29" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M18.1506 2.25H18.0502L4.5 3.58944V27.221L18.0502 34.875L31.5 27.221V3.58944L18.1506 2.25ZM29.5929 13.8266L18.0502 7.32075V7.22507H17.9498L17.8494 7.1294V7.22507L6.40706 13.8266V5.21591L17.9498 4.06782L29.5929 5.21591V13.8266ZM17.9498 8.75587L29.4926 15.1661L24.9758 17.6536L17.8494 13.6353V14.9747L23.7714 18.3233L22.868 18.8017L17.8494 15.9315V17.2709L21.6636 19.4714L20.8606 19.9498L17.8494 18.2276V19.5671L19.7565 20.6195L17.9498 21.6719L6.50743 15.2617L17.9498 8.75587ZM6.40706 16.6968L17.8494 23.2027V24.1595L9.92007 19.6628V21.0022L17.9498 25.5946V26.647L9.92007 22.1503V23.4897L17.9498 28.0821L26.0799 23.3941V18.419L29.4926 16.5055V26.0729L17.9498 32.6745L6.40706 26.1686V16.6968Z"
-                fill="black" />
-            </svg>
-          </a>
-        </div>
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__logo">
+          <svg width="29" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M18.1506 2.25H18.0502L4.5 3.58944V27.221L18.0502 34.875L31.5 27.221V3.58944L18.1506 2.25ZM29.5929 13.8266L18.0502 7.32075V7.22507H17.9498L17.8494 7.1294V7.22507L6.40706 13.8266V5.21591L17.9498 4.06782L29.5929 5.21591V13.8266ZM17.9498 8.75587L29.4926 15.1661L24.9758 17.6536L17.8494 13.6353V14.9747L23.7714 18.3233L22.868 18.8017L17.8494 15.9315V17.2709L21.6636 19.4714L20.8606 19.9498L17.8494 18.2276V19.5671L19.7565 20.6195L17.9498 21.6719L6.50743 15.2617L17.9498 8.75587ZM6.40706 16.6968L17.8494 23.2027V24.1595L9.92007 19.6628V21.0022L17.9498 25.5946V26.647L9.92007 22.1503V23.4897L17.9498 28.0821L26.0799 23.3941V18.419L29.4926 16.5055V26.0729L17.9498 32.6745L6.40706 26.1686V16.6968Z"
+              fill="black" />
+          </svg>
+        </a>
       </section>
     </div>
   </footer>
