@@ -1,4 +1,3 @@
-
 @import "fonts.less";
 @import "menu.less";
 @import "product.less";
@@ -6,16 +5,35 @@
 @import "features.less";
 @import "search.less";
 @import "image.less";
+@import "navigation.less";
+@import "copyright.less";
 
+// Colors
+@blue: #81b3d2;
+@lightgrey: #EEEEEE;
+@white: #FFFFFF;
+@darkgrey: #F2F2F2;
+// Viewports
+
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
 body {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  width: 320px;
   margin: 0;
+
 }
 
 .visually-hidden {
@@ -37,3 +55,35 @@ body {
   list-style: none;
 }
 
+.container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.page__footer {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}

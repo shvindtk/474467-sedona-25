@@ -1,3 +1,17 @@
+.social div {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+
+  }
+}
+
 .social__hashtag a {
   text-decoration: none;
   font-family: 'PT Sans';
@@ -5,4 +19,16 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+
+
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.social__link {
+  margin-left: 6px;
 }
