@@ -12,6 +12,7 @@
 @blue: #81b3d2;
 @lightgrey: #EEEEEE;
 @white: #FFFFFF;
+@darkgrey: #F2F2F2;
 // Viewports
 
 @tablet-width: 768px;
@@ -32,16 +33,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   margin: 0;
-  height: 100%;
-  width: 320px;
 
-  @media (min-width: @tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-  }
 }
 
 .visually-hidden {
@@ -67,6 +59,15 @@ body {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 img {
@@ -80,12 +81,9 @@ img {
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    padding-right: 60px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    padding-right: 120px;
-    padding-top: 36px;
   }
 }
