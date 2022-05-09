@@ -16,18 +16,43 @@
 .search__button {
   text-decoration: none;
   background-color: @blue;
-  color: #FFFFFF;
+  color: @white;
   margin-left: 18px;
   margin-right: 18px;
+  margin-top: 32px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 41px;
     margin-left: 155px;
     margin-right: 155px;
+    padding-top: 15px;
+    padding-bottom: 18px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 46px;
     margin-left: 371px;
     margin-right: 371px;
+    padding-top: 15px;
+    padding-bottom: 18px;
   }
 
+}
+
+.search p,
+.search h2 {
+  @media (min-width: @tablet-width) {
+    margin-left: 167px;
+    margin-right: 166px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 383px;
+    margin-right: 382px;
+  }
 }

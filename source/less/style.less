@@ -1,18 +1,19 @@
 @import "fonts.less";
-@import "menu.less";
 @import "product.less";
 @import "social.less";
 @import "features.less";
 @import "search.less";
 @import "image.less";
 @import "navigation.less";
-@import "copyright.less";
+@import "map.less";
+
 
 // Colors
 @blue: #81b3d2;
 @lightgrey: #EEEEEE;
 @white: #FFFFFF;
 @darkgrey: #F2F2F2;
+@black: #000000;
 // Viewports
 
 @tablet-width: 768px;
@@ -50,8 +51,6 @@ body {
 }
 
 .list-reset {
-  padding: 0;
-  margin: 0;
   list-style: none;
 }
 
@@ -59,7 +58,7 @@ body {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
-  min-width: 320px;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -80,10 +79,12 @@ img {
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
   }
 
   @media (min-width: @desktop-width) {
+    display: flex;
     flex-direction: row;
   }
 }
