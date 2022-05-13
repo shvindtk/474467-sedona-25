@@ -52,7 +52,7 @@
   @media (min-width: @tablet-width) {
     width: 256px;
     height: 256px;
-    padding: 40px 42px 42px 44px;
+    padding: 42px 40px 40px 41px;
   }
 
   @media (min-width: @desktop-width) {
@@ -98,7 +98,15 @@
   background-position: 0 25px;
   padding-top: 25px;
   margin-left: -20px;
-  min-width: 320px;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .product__canvas-home {
@@ -256,5 +264,15 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: nowrap;
+  }
+}
+
+.product-item__canvas li {
+  @media (min-width: @tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
   }
 }

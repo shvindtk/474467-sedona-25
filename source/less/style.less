@@ -6,6 +6,7 @@
 @import "image.less";
 @import "navigation.less";
 @import "map.less";
+@import "form.less";
 
 
 // Colors
@@ -14,6 +15,7 @@
 @white: #FFFFFF;
 @darkgrey: #F2F2F2;
 @black: #000000;
+@grey: #E6E6E6;
 // Viewports
 
 @tablet-width: 768px;
@@ -35,6 +37,9 @@ body {
   font-weight: 400;
   margin: 0;
 
+  @media (min-width: @desktop-width) {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .visually-hidden {
@@ -74,6 +79,10 @@ img {
   object-fit: cover;
 }
 
+fieldset {
+  border: 0 none;
+}
+
 .page__footer {
   display: flex;
   flex-direction: column;
@@ -86,5 +95,26 @@ img {
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
+  }
+}
+
+.page-header__description {
+  padding-top: 32px;
+  padding-bottom: 16px;
+  padding-left: 18px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 57px;
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 45px;
+    padding-left: 358px;
+    padding-right: 359px;
   }
 }

@@ -17,29 +17,29 @@
         <a class="navigation__logo" href="#">
           <img src="img/main_logo.svg" alt="Город Седона." height="96" width="185">
         </a>
-        <div class="navigation__menu  navigation__menu--opened navigation__menu--nojs">
+        <div class="navigation__menu  navigation__menu--closed navigation__menu--nojs">
           <button class="navigation__button sandwich-button" href="#" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="navigation__menu-wrapper">
             <ul class="navigation__menu-list">
               <li class="navigation__menu-item">
-                <a href="index.html">
+                <a href="index.html" class="navigation-item__link">
                   Главная
                 </a>
               </li>
               <li class="navigation__menu-item">
-                <a href="#">
+                <a href="#" class="navigation-item__link navigation-item__link--current">
                   Фото и видео
                 </a>
               </li>
               <li class="navigation__menu-item">
-                <a href="#">
+                <a href="form.html" class="navigation-item__link">
                   Форма отзыва
                 </a>
               </li>
               <li class="navigation__menu-item">
-                <a href="#">
+                <a href="#" class="navigation-item__link">
                   html academy
                 </a>
               </li>
@@ -67,51 +67,66 @@
         <ul class="features__list">
           <li class="features__item">
             <img class="features__img" src="img/nonnativespaces.jpg" alt="Неродные просторы" width="280" height="280">
-            <h3 class="features__title">Неродные просторы</h3>
-            <p class="features__author">Автор фото: Борис</p>
-            <div class="features__statistics features__statistics-first">
-              <a>
-                <img class="features__statistics-logo" src="img/likeicon.svg" width="23" height="21" alt="Лайк">
-              </a>
-              <p class="features__statistics-text">1350</p>
+            <div class="features__wrapper">
+              <h3 class="features__title">Неродные просторы</h3>
+              <p class="features__author">Автор фото: Борис</p>
+              <div class="features__statistics features__statistics-first">
+                <a>
+                  <img class="features__statistics-logo" src="img/likeicon.svg" width="23" height="21" alt="Лайк">
+                </a>
+                <p class="features__statistics-text">1350</p>
+              </div>
             </div>
           </li>
           <li class="features__item">
             <img src="img/localnature.jpg" class="features__img" alt="Местная растительность" width="280" height="280">
-            <h3 class="features__title">Местная растительность</h3>
-            <p class="features__author">Автор фото: Сергей</p>
-            <div class="features__statistics">
-              <a>
-                <img class="features__statistics-logo" src="img/likeicon.svg" width="23" height="21" alt="Лайк">
-              </a>
-              <p class="features__statistics-text">143</p>
+            <div class="features__wrapper">
+              <h3 class="features__title">Местная растительность</h3>
+              <p class="features__author">Автор фото: Сергей</p>
+              <div class="features__statistics">
+                <a>
+                  <img class="features__statistics-logo" src="img/likeicon.svg" width="23" height="21" alt="Лайк">
+                </a>
+                <p class="features__statistics-text">143</p>
+              </div>
             </div>
           </li>
           <li class="features__item">
             <img class="features__img" src="img/road.jpg" alt="Дорога на север" width="280" height="280">
-            <h3 class="features__title">Дорога на север</h3>
-            <p class="features__author">Автор фото: Петр</p>
-            <div class="features__statistics">
-              <a>
-                <img class="features__statistics-logo" src="img/likeicon.svg" width="23" height="21" alt="Лайк">
-              </a>
-              <p class="features__statistics-text">96</p>
+            <div class="features__wrapper">
+              <h3 class="features__title">Дорога на север</h3>
+              <p class="features__author">Автор фото: Петр</p>
+              <div class="features__statistics">
+                <a>
+                  <img class="features__statistics-logo" src="img/likeicon.svg" width="23" height="21" alt="Лайк">
+                </a>
+                <p class="features__statistics-text">96</p>
+              </div>
             </div>
           </li>
           <li class="features__item">
             <img class="features__img" src="img/devilbridge.jpg" alt="Мост дьявола" width="280" height="280">
-            <h3 class="features__title">Мост дьявола</h3>
-            <p class="features__author">Автор фото: Антон</p>
-            <div class="features__statistics">
-              <a>
-                <img class="features__statistics-logo" src="img/likeicon.svg" width="23" height="21" alt="Лайк">
-              </a>
-              <p class="features__statistics-text">254</p>
+            <div class="features__wrapper">
+              <h3 class="features__title">Мост дьявола</h3>
+              <p class="features__author">Автор фото: Антон</p>
+              <div class="features__statistics">
+                <a>
+                  <img class="features__statistics-logo" src="img/likeicon.svg" width="23" height="21" alt="Лайк">
+                </a>
+                <p class="features__statistics-text">254</p>
+              </div>
           </li>
         </ul>
       </div>
     </section>
     <section class="map">
+      <div class="container">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52388.09311551534!2d-111.81393547632474!3d34.84979885504471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1650259396104!5m2!1sru!2sru"
+          width="320" height="350" title="Город Седона" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
   </main>
   <footer class="page__footer">
