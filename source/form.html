@@ -17,7 +17,7 @@
         <a class="navigation__logo" href="#">
           <img src="img/main_logo.svg" alt="Город Седона." height="96" width="185">
         </a>
-        <div class="navigation__menu  navigation__menu--closed navigation__menu--nojs">
+        <div class="navigation__menu  navigation__menu--opened navigation__menu--nojs">
           <button class="navigation__button sandwich-button" href="#" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -54,7 +54,7 @@
       <div class="container">
         <div class="image__description">
           <h1 class="visually-hidden" hidden>Туристический городок Седона.</h1>
-          <img src="img/sedona.svg" alt="Седона" height="39" width="229">
+          <img class="image__catalog" src="img/sedona.svg" alt="Седона" height="39" width="229">
         </div>
       </div>
     </section>
@@ -159,12 +159,13 @@
             </label>
           </fieldset>
           <fieldset class="form__emotions">
-            <legend class="form__title"> Опишите свои эмоции:</legend>
-            <textarea class="form__textarea" readonly name="emotions">
-              Опишите подробно все свои восторги
+            <legend class="form__legend"> Опишите свои эмоции:</legend>
+            <textarea class="form__textarea" name="emotions" placeholder="Опишите подробно все свои восторги">
             </textarea>
-            <button class="form__submit-button sandwich-button" type="submit">Отправить отзыв</button>
-            <p>* - обязательные поля</p>
+            <form class="form__submit">
+              <button class="form__submit-button sandwich-button" type="submit">Отправить отзыв</button>
+              <p>* - обязательные поля</p>
+            </form>
           </fieldset>
         </div>
       </section>
@@ -229,6 +230,29 @@
       </section>
     </div>
   </footer>
+  <section class="modal modal-error">
+    <div class="container">
+      <div class="modal__container modal__container-error">
+        <h2 class="modal__title">Что-то пошло<br> не так!</h2>
+        <p class="modal__text">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-error__button sandwich-button" href="#" type="button">ОК</button>
+      </div>
+    </div>
+
+  </section>
+  <section class="modal modal-send">
+    <div class="container">
+      <div class="modal__container modal__container-send">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+          опубликуем
+          его на сайте.</p>
+        <div class="modal-send__wrapper">
+          <button class="modal-send__button sandwich-button" href="#" type="button">закрыть окно</button>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="script.js"></script>
 </body>
 
