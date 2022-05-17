@@ -1,0 +1,84 @@
+// Colors
+@blue: #81b3d2;
+@lightgrey: #EEEEEE;
+@white: #FFFFFF;
+@darkgrey: #F2F2F2;
+@black: #000000;
+@grey: #E6E6E6;
+// Viewports
+
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+fieldset {
+  border: 0 none;
+}
+
+.sandwich-button:hover {
+  background-color: #669EC0;
+
+}
+
+.sandwich-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}

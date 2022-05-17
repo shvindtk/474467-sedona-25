@@ -1,28 +1,237 @@
 .navigation {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  height: 56px;
+  width: 100%;
+  z-index: 2;
+}
+
+.navigation__menu-wrapper {
+  padding: 0;
+  margin: 0;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    color: @black;
+    padding-right: 70px;
+    padding-top: 18px;
+    padding-bottom: 17px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    padding-right: 91px;
+    padding-top: 18px;
+    padding-bottom: 17px;
   }
 }
 
 .navigation__button {
-  width: 23px;
+  position: absolute;
+  top: 17px;
+  right: 21px;
+  width: 22px;
   height: 22px;
-  background-color: @white;
   border: none;
-  outline: none;
+  background-color: white;
+  z-index: 2;
+  cursor: pointer;
+
+  &:active {
+    border: none;
+  }
 }
 
-.navigation__button svg {
-  fill: @blue;
+.navigation__menu-item {
+  width: 100%;
+  height: fit-content;
+  mix-blend-mode: normal;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.navigation-item__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 17px 0 12px;
+}
+
+@media(max-width: @mobile-width-only) {
+
+
+  .navigation__menu--closed .navigation__menu-list {
+    display: none;
+  }
+
+  .navigation__menu--nojs .navigation__menu-item {
+    display: block;
+  }
+
+  .navigation__menu--opened .navigation__menu-list {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+
+  .navigation__menu--closed .navigation__menu-item {
+    display: none;
+  }
+
+  .navigation__menu--nojs .navigation__menu-list {
+    display: block;
+  }
+
+  .navigation__menu--opened .navigation__button {
+    background-color: rgba(1, 1, 1, 0);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      right: -3px;
+      width: 22px;
+      height: 4px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: rgba(#ffffff, 0.6);
+    }
+  }
+
+  .navigation__menu--closed .navigation__button {
+    background-color: #ffffff;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 23px;
+      height: 4px;
+      background-color: @blue;
+      box-shadow: 0 9px 0 0 @blue, 0 18px 0 0 @blue;
+    }
+  }
+
+  .navigation__menu-item {
+    width: 100%;
+    border-top: 1px solid rgba(1, 1, 1, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+    }
+  }
+
+  .navigation-item__link:active {
+    color: rgba(#ffffff, 0.3);
+  }
+
+  .navigation__menu--opened .navigation__menu-list::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+}
+
+
+.navigation__menu-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation__menu-list {
+  width: 100%;
+  height: fit-content;
+  background: @blue;
+  mix-blend-mode: normal;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: @white;
+  }
+
+}
+
+.navigation-item__link {
+  display: block;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 17px 0 12px;
+  white-space: nowrap;
+
+  @media (min-width: @tablet-width) {
+    color: @black;
+    padding: 0;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.navigation__menu-item:nth-child(3) {
+  @media (min-width: @tablet-width) {
+    margin-left: 220px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 309px;
+  }
+}
+
+.navigation__logo {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    margin-left: -100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    margin-right: 408px;
+  }
+}
+
+.navigation-item__link:hover {
+  color: rgba(129, 179, 210, 1);
+}
+
+.navigation-item__link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
