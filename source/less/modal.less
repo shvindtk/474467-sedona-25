@@ -1,0 +1,87 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__container {
+  position: relative;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.modal__container-error {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    padding: 50px 47px 49px 46px;
+  }
+}
+
+.modal__container-send {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+    padding-top: 53px;
+  }
+}
+
+
+.modal-send {
+  display: none;
+}
+
+.modal-error {
+  display: none;
+}
+
+.modal-error__button {
+  width: 180px;
+  height: 58px;
+  background-color: @blue;
+  border: none;
+  color: @white;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    width: 272px;
+    margin-top: 25px;
+  }
+}
+
+.modal-send__wrapper {
+  background-color: #F2F2F2;
+  margin-top: 30px;
+}
+
+.modal-send__button {
+  width: 180px;
+  height: 58px;
+  background-color: @blue;
+  border: none;
+  color: @white;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+}
+
+.modal__container-send p {
+  margin-left: 97px;
+  margin-right: 99px;
+}

@@ -11,6 +11,8 @@
     background: url("../img/triangle.svg"),
       url("../img/background_big.jpg");
     background-repeat: no-repeat, no-repeat;
+    background-size: 100%, cover;
+    background-position: bottom, 0 0;
 
   }
 
@@ -18,5 +20,19 @@
     background: url("../img/triangle.svg"),
       url("../img/background_big.jpg");
     background-repeat: no-repeat, no-repeat;
+    background-size: 100%, cover;
+    background-position: bottom, 0 0;
+  }
+}
+
+.image__catalog {
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
+    margin-top: 93px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 101px;
   }
 }
