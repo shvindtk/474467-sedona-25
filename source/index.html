@@ -14,7 +14,11 @@
     <div name="container">
       <nav class="navigation">
         <a class="navigation__logo" href="#">
-          <img src="img/main_logo.svg" alt="Город Седона." height="96" width="185">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main_logo_desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/main_logo_tablet.svg">
+            <img src="img/main_logo.svg" alt="Город Седона." height="96" width="185">
+          </picture>
         </a>
         <div class="navigation__menu  navigation__menu--opened navigation__menu--nojs">
           <button class="navigation__button sandwich-button" href="#" type="button">
