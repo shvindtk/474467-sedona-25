@@ -11,10 +11,15 @@
 
 <body class="page__body">
   <header class="page__header">
-    <div name="container">
+    <div class="container">
       <nav class="navigation">
         <a class="navigation__logo" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/main_logo_desktop.webp 1x, img/main_logo_desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/main_logo_tablet.webp 1x, img/main_logo_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/main_logo.webp 1x, img/main_logo@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/main_logo_desktop.svg">
             <source media="(min-width: 768px)" srcset="img/main_logo_tablet.svg">
             <img src="img/main_logo.svg" alt="Город Седона." height="96" width="185">
