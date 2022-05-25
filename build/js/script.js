@@ -1,14 +1,1 @@
-let navMain = document.querySelector('.navigation__menu');
-let navToggle = document.querySelector('.navigation__button');
-
-navMain.classList.remove('navigation__menu--nojs');
-
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('navigation__menu--closed')) {
-    navMain.classList.remove('navigation__menu--closed');
-    navMain.classList.add('navigation__menu--opened');
-  } else {
-    navMain.classList.add('navigation__menu--closed');
-    navMain.classList.remove('navigation__menu--opened');
-  }
-});
+let navMain=document.querySelector(".navigation__menu"),navToggle=document.querySelector(".navigation__button");navMain.classList.remove("navigation__menu--nojs"),navToggle.addEventListener("click",(function(){navMain.classList.contains("navigation__menu--closed")?(navMain.classList.remove("navigation__menu--closed"),navMain.classList.add("navigation__menu--opened")):(navMain.classList.add("navigation__menu--closed"),navMain.classList.remove("navigation__menu--opened"))}));
